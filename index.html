@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeReview 03</title>
+
+    <!--An external stylesheet is used-->
+    <link rel='stylesheet' type="text/css" href='css/style.css'>
+
+</head>
+
+<body>
+
+<!--Setting up the html structure, semantic elements are used for better readability-->   
+
+<div class='container'>
+
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <a href="https://www.codefactory.wien/" id="banner">
+            <img src="img/banner.png" alt="Full Stack Web Development course">
+        </a>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="top">
+
+            <img id="image" src="img/traffic-332857_1920.jpg" alt="traffic">
+            <p id="image_tag" class="size-1_color-secondary_weight-bold">Car Insurance</p>
+            
+            <div class="content">
+
+                <p class="size-1_color-primary_weight-bold">Great coverage begins with a custom quote</p>
+                
+                <div class="imput_form">
+
+                    <div class="column">
+                        <p class="size-3_color-primary_weight-normal_align-left">Your name:</p>
+                        <input  type="text" name="name" class="textbox"><br><br>
+                        <p class="size-3_color-primary_weight-normal_align-left">Country:</p>
+                        <select name="Country" class="dropdown_menu">                                                                                  
+                            <option value="Austria" selected>Austria</option>
+                            <option value="Hungary">Hungary</option>                              
+                            <option value="Greece">Greece</option>
+                        </select><br><br>
+                    </div>
+
+                    <div class="column">
+                        <p class="size-3_color-primary_weight-normal_align-left">Age:</p>
+                        <input type= "text" name="age" class="textbox"><br><br>
+                        <p class="size-3_color-primary_weight-normal_align-left">Horsepower of your car:</p>
+                        <input type= "text" name="power" class="textbox"><br><br>
+                    </div>
+                    
+                </div>
+
+                <input type="submit" id="submit" value="Calculate">
+                <div id="result"></div>
+            </div>
+
+            <div id="pitch">
+                <p class="size-1_color-primary_weight-bold">Un-complicating car coverage</p>
+                <p class="size-2_color-primary_weight-bold">Understanding your coverage options shouldn't be so hard. We'll guide you through available coverage types, starting with who and what is covered.</p>
+            </div>
+
+        </section>
+
+        <!--Adding a separate section for the two tiles at the bottom-->
+        <section class="bottom">
+
+            <article>
+                <p class="size-2_color-tertiary_weight-normal">What comes standard</p>
+                <p class="size-3_color-primary_weight-normal">The coverage you need</p>
+                <ul class="check">
+                    <li>Bodily Injury Liability</li>
+                    <li>Property Damage</li>
+                    <li>Medical Payments</li>
+                </ul>
+                <p class="size-3_color-primary_weight-bold">Benefits</p>
+                <p class="size-3_color-quaternary_weight-normal">12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+            </article>
+
+            <article>
+                <p class="size-2_color-tertiary_weight-normal">Add-on protection & coverage</p>
+                <p class="size-3_color-primary_weight-normal">For more peace of mind</p>
+                <ul class="check">
+                    <li>Better Car Replacement</li>
+                    <li>Towing & Labor</li>
+                    <li>Rental Car Coverage</li>
+                </ul>
+                <p class="size-3_color-primary_weight-bold">Earned Benefits</p>
+                <p class="size-3_color-quaternary_weight-normal">Accident Forgiveness<sup>1</sup> | New Car Replacement<sup>TM</sup></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+        <div class='footer_image'>
+            <img src="img/logo-inv.png" alt="logo-inv">
+        </div>
+        <p>Mark - CodeFactory 2018</p>
+    </footer>
+
+</div>
+
+</body>
+
+</html>    

@@ -1,0 +1,364 @@
+/*Importing color settings from a separate file and the Roboto font from Google*/
+@import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*Removing default settings and specifying the font*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    color: $primary-text;
+    font-family: Roboto, Arial;
+}
+
+/*Setting up a container*/
+.container {
+    background: transparent;
+    width: 100%;
+}
+
+/*Unsetting the default formatting for links, otherwise output depens on the browser*/
+a {
+    text-decoration: none;
+    }
+
+a:link {
+    color: $secondary-text;
+}
+
+a:visited {
+    color: $secondary-text;
+}
+
+#submit {
+    text-decoration: none;
+}
+
+/*Formatting text via attribute selectors*/
+p[class*=size-1] {
+    font-size: 2em;
+}
+
+p[class*=size-2] {
+    font-size: 1.2em;
+}
+
+p[class*=size-3] {
+    font-size: 1em;
+}
+
+p[class*=color-primary] {
+    color: $primary-text;
+}
+
+p[class*=color-secondary] {
+    color: $secondary-text;
+}
+
+p[class*=color-secondary] {
+    color: $secondary-text;
+}
+
+p[class*=color-tertiary] {
+    color: $tertiary-text;
+}
+
+p[class*=color-quaternary] {
+    color: $quaternary-text;
+}
+
+p[class*=weight-bold] {
+    font-weight: bold;
+}
+
+p[class*=weight-normal] {
+    font-weight: normal;
+}
+
+p[class*=align-left] {
+    text-align: left;
+}
+
+sup {
+    font-size: 0.5em;
+    color: inherit;
+    font-weight: inherit;
+}
+
+ul[class=check] li {
+    color: $primary-text;
+}
+
+#submit {
+    color: $secondary-text;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*Text alignement*/
+article p {
+    text-align: left;
+}
+
+ul[class=check] li {
+    text-align: left;
+}
+
+/*Implementing the overlays*/
+.top {
+    position: relative;
+}
+
+#image_tag {
+    position: absolute;
+    top: 0%;
+}
+
+#image {
+    width: 100%;
+    display: block; //Used to remove small white line below since an image is rendered inline by default
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+}
+
+/*Adding the check marks using a pseudo-element*/
+ul[class=check] li:before {
+    content: '✔ ';
+    color: $tertiary-text;
+}
+
+/*Setting box color schemes*/
+header {
+    background-color: $primary-background;
+}
+
+nav {
+    background-color: $secondary-background;
+}
+
+.content {
+    background-color: $quinary-background;
+}
+
+#pitch {
+    background-color: $quaternary-background;
+}
+
+footer {
+    background-color: $tertiary-background;
+}
+
+#submit {
+    background-color: $quinary-text;
+}
+
+/*Flexboxing*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0 1em 0;
+}
+
+ul[class=navigation] {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imput_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section[class=bottom] {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.footer_image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Adjusting sizes*/
+article {
+    width: 40%;
+}
+
+.dropdown_menu {
+    width: 100%;
+}
+
+/*Adjusting margins and padding*/
+#pitch {
+    padding: 2% 20% 1% 20%;
+}
+
+.content {
+    margin: 0 5% 0 5%;
+    padding: 2% 15% 2% 15%;
+}
+
+#submit {
+    margin: 1em 0 1em 0;
+    padding: 1% 10% 1% 10%;
+}
+
+#image_tag {
+    margin: 1% 0 0 2%;
+}
+
+section[class=bottom] {
+    padding: 10% 0 10% 0;
+}
+
+article {
+    padding: 2%;
+}
+
+ul[class=check] {
+    margin: 1em 0 2em 0;
+}
+
+footer {
+    padding-bottom: 0.5em;
+}
+
+.footer_image {
+    margin: 1em;
+}
+
+/*Adding borders and shadows*/
+.content {
+    border: 2px solid $primary-text;
+}
+
+article {
+    box-shadow: 0px 0px 3px 2px $quaternary-background;
+    border-top: 2px solid $primary-text;
+}
+
+#submit {
+    border: none;
+    border-radius: 0.5em;
+}
+
+/*Formatting the navigation bars*/
+nav li {
+    font-size: 1.5em;
+}
+
+li {
+    list-style-type: none;
+    padding: 1%;
+}
+
+/*Setting up the media query for phones*/
+@media screen and (max-width: 480px) {
+
+    /*Centering the navigation bars*/
+
+    ul[class=navigation] {
+        justify-content: center;
+    }
+    
+    /*Restyling the footer*/
+    .footer_image {
+        justify-content: center;
+    }
+
+    footer {
+        padding-top: 1em;
+    }
+
+    /*Adjusting margins and padding*/
+    #pitch {
+        padding: 50% 5% 1% 5%;
+    }
+
+    article {
+        margin: 5% 0 5% 0;
+    }
+    
+    /*Reassembling the bottom section*/
+    section[class=bottom] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 80%;
+    }
+
+    /*Realigning the input section*/
+    .imput_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .textbox {
+        width: 100%;
+    }
+
+    section[class=bottom] {
+        padding: 0 0 0 0;
+    }
+
+    /*Hiding the banner in the header*/
+    #banner {
+        display: none;
+    }
+}
+
+/*Setting up the media query for tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    /*Centering the navigation bars*/
+    ul[class=navigation] {
+        justify-content: center;
+    }
+
+    /*Restyling the footer*/
+
+    .footer_image {
+        justify-content: center;
+    }
+
+    footer {
+        padding-top: 1em;
+    }
+
+    /*Adjusting margins and padding*/
+    #pitch {
+        padding: 5% 5% 1% 5%;
+    }
+
+    .content {
+        padding: 2% 5% 2% 5%;
+    }
+
+    /*Hiding the banner in the header*/
+    #banner {
+        display: none;
+    }
+}
+
+/*Setting up the media query for desktop*/
+@media screen and (min-width: 769px) {
+
+    /*Adding a transformation for the desktop version*/
+    nav li:hover {
+        background-color: $tertiary-background;
+    }
+
+    .content {
+        min-width: 60%;;
+    }
+}
