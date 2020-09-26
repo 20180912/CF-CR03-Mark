@@ -18,6 +18,7 @@ for (var i = 0; i < team.length; i++) {
     document.getElementById(`salesman${[i]}`).appendChild(image);
 }
 
+/*Creating event listeners to reveal and hide details*/
 var images = document.getElementsByClassName("photo");
 
 for(let i = 0 ; i < images.length ; i++){
