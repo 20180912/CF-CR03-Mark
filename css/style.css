@@ -75,6 +75,11 @@ ul[class=check] li {
   font-size: 2em;
   font-weight: bold; }
 
+#result {
+  color: #339235;
+  font-size: 2em;
+  font-weight: bold; }
+
 /*Text alignement*/
 article p {
   text-align: left; }
@@ -154,6 +159,14 @@ article {
 .dropdown_menu {
   width: 100%; }
 
+table {
+  width: 80%; }
+
+.photo {
+  width: 100%;
+  object-fit: contain;
+  display: block; }
+
 /*Adjusting margins and padding*/
 #pitch {
   padding: 2% 20% 1% 20%; }
@@ -183,6 +196,9 @@ footer {
 
 .footer_image {
   margin: 1em; }
+
+table {
+  margin: 1% 10% 1% 10%; }
 
 /*Adding borders and shadows*/
 .content {

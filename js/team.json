@@ -1,0 +1,20 @@
+var teamMembers =`
+[{
+    "name":"Fran",
+    "email":"fran@index.com",
+    "image":"img/salesman0.jpg",
+    "favorite_car": "Toyota Corolla",
+    "years_at_company" : 8
+},{
+    "name":"Bill",
+    "email":"bill@index.com",
+    "image":"img/salesman1.jpg",
+    "favorite_car": "Tesla Model S",
+    "years_at_company" : 2
+},{
+    "name":"Fritz",
+    "email":"fritz@index.com",
+    "image":"img/salesman2.jpg",
+    "favorite_car": "Volkswagen Golf",
+    "years_at_company" : 3
+}]`;

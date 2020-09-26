@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeReview 03</title>
+
+    <!--An external stylesheet is used-->
+    <link rel='stylesheet' type="text/css" href='css/style.css'>
+
+    <!--Importing the JSON file about the team-->
+    <script src="js/team.json"></script>   
+
+</head>
+
+<body>
+
+<!--Setting up the html structure, semantic elements are used for better readability-->   
+
+<div class='container'>
+
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <a href="https://www.codefactory.wien/" id="banner">
+            <img src="img/banner.png" alt="Full Stack Web Development course">
+        </a>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <table border='1'>
+            <thead>
+                <tr>
+                    <th>Click on my photo to learn more</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>More</th>
+                </tr>
+            </thead>
+            <tbody id="table_content">
+
+            </tbody>
+        </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+        <div class='footer_image'>
+            <img src="img/logo-inv.png" alt="logo-inv">
+        </div>
+        <p>Mark - CodeFactory 2018</p>
+    </footer>
+
+</div>
+
+    <script type="text/javascript" src="js/team.js"></script>
+
+</body>
+
+</html>    
